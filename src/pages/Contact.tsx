@@ -35,15 +35,15 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <h3 className="text-lg font-semibold text-gray-800 mb-2">Email</h3>
-            <p className="text-gray-600">support@fansphere.com</p>
+            <p className="text-gray-600">contact@fansphere.tech</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <h3 className="text-lg font-semibold text-gray-800 mb-2">Phone</h3>
-            <p className="text-gray-600">(555) 123-4567</p>
+            <p className="text-gray-600">(212) 555-0123</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <h3 className="text-lg font-semibold text-gray-800 mb-2">Location</h3>
-            <p className="text-gray-600">San Francisco, CA</p>
+            <p className="text-gray-600">350 Fifth Avenue, Manhattan, NY 10118</p>
           </div>
         </div>
 
