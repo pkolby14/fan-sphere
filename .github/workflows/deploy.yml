@@ -37,20 +37,18 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Create 404.html
-        run: cp dist/index.html dist/404.html
+      - name: Create directories and copy files
+        run: |
+          mkdir -p dist/terms
+          cp dist/index.html dist/404.html
+          cp dist/index.html dist/terms/index.html
+          cp public/tiktok-domain-verification.txt dist/
+          cp public/tiktok-domain-verification.txt dist/terms/
       
       - name: Fix MIME types
         run: |
           echo '/* /index.html 200' > dist/_redirects
           echo '{ "*.js": { "Content-Type": "application/javascript" }, "*.css": { "Content-Type": "text/css" }, "*.txt": { "Content-Type": "text/plain" } }' > dist/_headers
-      
-      - name: Copy verification files
-        run: |
-          cp public/tiktok-domain-verification.txt dist/
-          cp public/tiktok-domain-verification.txt dist/terms/
-          mkdir -p dist/terms
-          cp dist/index.html dist/terms/index.html
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
