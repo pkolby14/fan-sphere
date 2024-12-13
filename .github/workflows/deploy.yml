@@ -45,6 +45,10 @@ jobs:
           echo '/* /index.html 200' > dist/_redirects
           echo '{ "*.js": { "Content-Type": "application/javascript" }, "*.css": { "Content-Type": "text/css" } }' > dist/_headers
       
+      - name: Copy TikTok verification file
+        run: |
+          echo "tiktok-developers-site-verification=r4ExMpSrKURXlWHHkgR8yEx88Le2aa3z" > dist/tiktok-developers-site-verification-r4ExMpSrKURXlWHHkgR8yEx88Le2aa3z.txt
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
