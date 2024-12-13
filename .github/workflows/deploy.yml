@@ -44,11 +44,11 @@ jobs:
         run: |
           echo '/* /index.html 200' > dist/_redirects
           echo '{ "*.js": { "Content-Type": "application/javascript" }, "*.css": { "Content-Type": "text/css" } }' > dist/_headers
+          echo '*.txt text/plain' >> dist/_headers
       
       - name: Copy TikTok verification file
         run: |
-          mkdir -p dist/terms
-          cp public/tiktokr4ExMpSrKURXlWHHkgR8yEx88Le2aa3z.txt dist/terms/
+          cp public/tiktokr4ExMpSrKURXlWHHkgR8yEx88Le2aa3z.txt dist/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
