@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
-import { Home } from './pages/Home'
-import { TermsOfService } from './pages/TermsOfService'
-import { PrivacyPolicy } from './pages/PrivacyPolicy'
+import Home from './pages/Home'
+import TermsOfService from './pages/TermsOfService'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 function App() {
   return (
