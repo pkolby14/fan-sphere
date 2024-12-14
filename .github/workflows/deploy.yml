@@ -42,8 +42,7 @@ jobs:
           mkdir -p dist/terms
           cp dist/index.html dist/404.html
           cp dist/index.html dist/terms/index.html
-          cp public/tiktok-domain-verification.txt dist/
-          cp public/tiktok-domain-verification.txt dist/terms/
+          echo "tiktok-developers-site-verification=7xmak9noHxVOdyal9dabnM97OMPb2uGb" > dist/tiktok-domain-verification.txt
       
       - name: Fix MIME types
         run: |
