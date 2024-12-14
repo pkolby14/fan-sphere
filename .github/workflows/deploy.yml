@@ -33,9 +33,6 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Add verification file
-        run: cp public/1VWYQT09GR6h0Ucvk99MsxrTEu3tceeq.txt dist/
-      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
