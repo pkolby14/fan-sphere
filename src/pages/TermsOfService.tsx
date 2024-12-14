@@ -4,7 +4,7 @@ const TermsOfService: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div style={{ display: 'none' }}>tiktok-developers-site-verification=r4ExMpSrKURXlWHHkgR8yEx88Le2aa3z</div>
+        <div style={{ display: 'none' }}>tiktok-developers-site-verification=7m7oglGgAQlOd3iMMAGv9gmdLSsaSAQq</div>
         
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Terms of Service</h1>
         <div className="prose prose-lg">
