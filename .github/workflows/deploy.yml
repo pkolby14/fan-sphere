@@ -10,10 +10,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
-
 jobs:
   deploy:
     environment:
@@ -37,15 +33,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Create directories and copy files
-        run: |
-          cp dist/index.html dist/404.html
-          cp public/1VWYQT09GR6h0Ucvk99MsxrTEu3tceeq.txt dist/
-      
-      - name: Fix MIME types
-        run: |
-          echo '/* /index.html 200' > dist/_redirects
-          echo '{ "*.js": { "Content-Type": "application/javascript" }, "*.css": { "Content-Type": "text/css" }, "*.txt": { "Content-Type": "text/plain" } }' > dist/_headers
+      - name: Add verification file
+        run: cp public/1VWYQT09GR6h0Ucvk99MsxrTEu3tceeq.txt dist/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
