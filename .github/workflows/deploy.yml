@@ -39,10 +39,8 @@ jobs:
       
       - name: Create directories and copy files
         run: |
-          mkdir -p dist/terms
           cp dist/index.html dist/404.html
-          cp dist/index.html dist/terms/index.html
-          echo "tiktok-developers-site-verification=7xmak9noHxVOdyal9dabnM97OMPb2uGb" > dist/tiktok-domain-verification.txt
+          cp public/7xmak9noHxVOdyal9dabnM97OMPb2uGb.txt dist/
       
       - name: Fix MIME types
         run: |
