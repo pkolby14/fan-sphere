@@ -40,7 +40,7 @@ jobs:
       - name: Create directories and copy files
         run: |
           cp dist/index.html dist/404.html
-          cp public/7xmak9noHxVOdyal9dabnM97OMPb2uGb.txt dist/
+          cp public/1VWYQT09GR6h0Ucvk99MsxrTEu3tceeq.txt dist/
       
       - name: Fix MIME types
         run: |
